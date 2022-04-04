@@ -3,9 +3,20 @@
   "version": "1.0.0",
   "description": "ActiveBoxPage",
   "main": "index.js",
+  "homepage": "https://github.com/OlegWeremyew/ActiveBox",
   "scripts": {
-    "test": "y"
+    "deploy": "gh-pages -d src"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/OlegWeremyew/ActiveBox.git"
   },
   "author": "",
-  "license": "ISC"
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/OlegWeremyew/ActiveBox/issues"
+  },
+  "devDependencies": {
+    "gh-pages": "^3.2.3"
+  }
 }
