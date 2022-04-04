@@ -2,13 +2,17 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
     <title>ActiveBox</title>
+
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Cardo:ital@1&family=Open+Sans:ital,wght@0,400;0,600;0,700;1,400;1,600;1,700&display=swap"
           rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,300;0,400;0,600;0,700;1,300;1,400;1,600&display=swap"
           rel="stylesheet">
+
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -36,6 +40,24 @@
         </g>
     </symbol>
 
+    <symbol id="instagram" viewBox="0 0 50 50">
+        <g>
+            <path d="M 16 3 C 8.83 3 3 8.83 3 16 L 3 34 C 3 41.17 8.83 47 16 47 L 34 47 C 41.17 47 47 41.17 47 34 L 47 16 C 47 8.83 41.17 3 34 3 L 16 3 z M 37 11 C 38.1 11 39 11.9 39 13 C 39 14.1 38.1 15 37 15 C 35.9 15 35 14.1 35 13 C 35 11.9 35.9 11 37 11 z M 25 14 C 31.07 14 36 18.93 36 25 C 36 31.07 31.07 36 25 36 C 18.93 36 14 31.07 14 25 C 14 18.93 18.93 14 25 14 z M 25 16 C 20.04 16 16 20.04 16 25 C 16 29.96 20.04 34 25 34 C 29.96 34 34 29.96 34 25 C 34 20.04 29.96 16 25 16 z"/>
+        </g>
+    </symbol>
+
+    <symbol id="vkontakte" viewBox="0 0 50 50">
+        <g>
+            <path d="M 8.390625 2 C 4.859375 2 2 4.859375 2 8.390625 L 2 41.609375 C 2 45.140625 4.859375 48 8.390625 48 L 41.609375 48 C 45.140625 48 48 45.140625 48 41.609375 L 48 8.390625 C 48 4.859375 45.140625 2 41.609375 2 Z M 15 11 L 23.863281 11 C 25.867188 11 34.25 11 34.25 17.503906 C 34.25 18.871094 33.914063 20.085938 33.246094 21.152344 C 32.578125 22.222656 31.664063 23.003906 30.488281 23.511719 L 31.425781 23.65625 C 33.113281 24.019531 34.464844 24.761719 35.480469 25.886719 C 36.492188 27.011719 37 28.523438 37 30.425781 C 37 31.816406 36.742188 33.042969 36.226563 34.09375 C 35.714844 35.148438 35.023438 36.011719 34.15625 36.707031 C 33.132813 37.53125 32 38.121094 30.765625 38.472656 C 29.535156 38.820313 27.980469 39 26.078125 39 L 15 39 Z M 21.875 16.597656 L 21.875 22.199219 L 24.46875 22.199219 C 24.46875 22.199219 27.378906 22.289063 27.378906 19.402344 C 27.378906 16.511719 24.378906 16.597656 24.378906 16.597656 Z M 21.875 26.402344 L 21.875 33.410156 L 22.246094 33.410156 C 24.027344 33.410156 25.257813 33.429688 25.941406 33.402344 C 26.625 33.375 30.125 33.398438 30.125 29.84375 C 30.125 26.289063 26.785156 26.421875 26.058594 26.402344 Z"/>
+        </g>
+    </symbol>
+
+    <symbol id="telegram" viewBox="0 0 50 50">
+        <g>
+            <path d="M46.137,6.552c-0.75-0.636-1.928-0.727-3.146-0.238l-0.002,0C41.708,6.828,6.728,21.832,5.304,22.445	c-0.259,0.09-2.521,0.934-2.288,2.814c0.208,1.695,2.026,2.397,2.248,2.478l8.893,3.045c0.59,1.964,2.765,9.21,3.246,10.758	c0.3,0.965,0.789,2.233,1.646,2.494c0.752,0.29,1.5,0.025,1.984-0.355l5.437-5.043l8.777,6.845l0.209,0.125	c0.596,0.264,1.167,0.396,1.712,0.396c0.421,0,0.825-0.079,1.211-0.237c1.315-0.54,1.841-1.793,1.896-1.935l6.556-34.077	C47.231,7.933,46.675,7.007,46.137,6.552z M22,32l-3,8l-3-10l23-17L22,32z"/>
+        </g>
+    </symbol>
+
 </svg>
 
 <!--Header-->
@@ -54,6 +76,10 @@
                 <a class="nav__link" href="#">Testimonials</a>
                 <a class="nav__link" href="#">Download</a>
             </nav>
+
+            <button class="burger">
+                <span class="burger__item">invisible text</span>
+            </button>
 
         </div>
     </div>
@@ -218,23 +244,47 @@
                     sit amet risus. Maecenas sed diam eget risus varius blandit sit amet non magna. Nullam quis risus
                     eget urna mollis ornare vel eu leo.
                 </div>
+
                 <div class="social">
+
                     <a class="social__item" href="#" target="_blank">
                         <svg class="social__icon">
                             <use xlink:href="#facebook"></use>
                         </svg>
                     </a>
+
                     <a class="social__item" href="#" target="_blank">
                         <svg class="social__icon">
                             <use xlink:href="#twitter"></use>
                         </svg>
                     </a>
+
                     <a class="social__item" href="#" target="_blank">
                         <svg class="social__icon">
                             <use xlink:href="#linkedin"></use>
                         </svg>
                     </a>
-                </div>
+
+                    <a class="social__item" href="#" target="_blank">
+                        <svg class="social__icon">
+                            <use xlink:href="#instagram"></use>
+                        </svg>
+                    </a>
+
+                    <a class="social__item" href="#" target="_blank">
+                        <svg class="social__icon">
+                            <use xlink:href="#vkontakte"></use>
+                        </svg>
+                    </a>
+
+                    <a class="social__item" href="#" target="_blank">
+                        <svg class="social__icon">
+                            <use xlink:href="#telegram"></use>
+                        </svg>
+                    </a>
+
+                </div> <!--/.social-->
+
             </div>
 
             <div class="team__item">
@@ -246,23 +296,47 @@
                     sit amet risus. Maecenas sed diam eget risus varius blandit sit amet non magna. Nullam quis risus
                     eget urna mollis ornare vel eu leo.
                 </div>
+
                 <div class="social">
+
                     <a class="social__item" href="#" target="_blank">
                         <svg class="social__icon">
                             <use xlink:href="#facebook"></use>
                         </svg>
                     </a>
+
                     <a class="social__item" href="#" target="_blank">
                         <svg class="social__icon">
                             <use xlink:href="#twitter"></use>
                         </svg>
                     </a>
+
                     <a class="social__item" href="#" target="_blank">
                         <svg class="social__icon">
                             <use xlink:href="#linkedin"></use>
                         </svg>
                     </a>
-                </div>
+
+                    <a class="social__item" href="#" target="_blank">
+                        <svg class="social__icon">
+                            <use xlink:href="#instagram"></use>
+                        </svg>
+                    </a>
+
+                    <a class="social__item" href="#" target="_blank">
+                        <svg class="social__icon">
+                            <use xlink:href="#vkontakte"></use>
+                        </svg>
+                    </a>
+
+                    <a class="social__item" href="#" target="_blank">
+                        <svg class="social__icon">
+                            <use xlink:href="#telegram"></use>
+                        </svg>
+                    </a>
+
+                </div> <!--/.social-->
+
             </div>
 
             <div class="team__item">
@@ -274,23 +348,47 @@
                     sit amet risus. Maecenas sed diam eget risus varius blandit sit amet non magna. Nullam quis risus
                     eget urna mollis ornare vel eu leo.
                 </div>
+
                 <div class="social">
+
                     <a class="social__item" href="#" target="_blank">
                         <svg class="social__icon">
                             <use xlink:href="#facebook"></use>
                         </svg>
                     </a>
+
                     <a class="social__item" href="#" target="_blank">
                         <svg class="social__icon">
                             <use xlink:href="#twitter"></use>
                         </svg>
                     </a>
+
                     <a class="social__item" href="#" target="_blank">
                         <svg class="social__icon">
                             <use xlink:href="#linkedin"></use>
                         </svg>
                     </a>
-                </div>
+
+                    <a class="social__item" href="#" target="_blank">
+                        <svg class="social__icon">
+                            <use xlink:href="#instagram"></use>
+                        </svg>
+                    </a>
+
+                    <a class="social__item" href="#" target="_blank">
+                        <svg class="social__icon">
+                            <use xlink:href="#vkontakte"></use>
+                        </svg>
+                    </a>
+
+                    <a class="social__item" href="#" target="_blank">
+                        <svg class="social__icon">
+                            <use xlink:href="#telegram"></use>
+                        </svg>
+                    </a>
+
+                </div> <!--/.social-->
+
             </div>
 
             <div class="team__item">
@@ -302,23 +400,47 @@
                     sit amet risus. Maecenas sed diam eget risus varius blandit sit amet non magna. Nullam quis risus
                     eget urna mollis ornare vel eu leo.
                 </div>
+
                 <div class="social">
+
                     <a class="social__item" href="#" target="_blank">
                         <svg class="social__icon">
                             <use xlink:href="#facebook"></use>
                         </svg>
                     </a>
+
                     <a class="social__item" href="#" target="_blank">
                         <svg class="social__icon">
                             <use xlink:href="#twitter"></use>
                         </svg>
                     </a>
+
                     <a class="social__item" href="#" target="_blank">
                         <svg class="social__icon">
                             <use xlink:href="#linkedin"></use>
                         </svg>
                     </a>
-                </div>
+
+                    <a class="social__item" href="#" target="_blank">
+                        <svg class="social__icon">
+                            <use xlink:href="#instagram"></use>
+                        </svg>
+                    </a>
+
+                    <a class="social__item" href="#" target="_blank">
+                        <svg class="social__icon">
+                            <use xlink:href="#vkontakte"></use>
+                        </svg>
+                    </a>
+
+                    <a class="social__item" href="#" target="_blank">
+                        <svg class="social__icon">
+                            <use xlink:href="#telegram"></use>
+                        </svg>
+                    </a>
+
+                </div> <!--/.social-->
+
             </div>
 
         </div> <!--/.team__inner-->
@@ -392,6 +514,24 @@
                         </svg>
                     </a>
 
+                    <a class="social__item" href="#" target="_blank">
+                        <svg class="social__icon">
+                            <use xlink:href="#telegram"></use>
+                        </svg>
+                    </a>
+
+                    <a class="social__item" href="#" target="_blank">
+                        <svg class="social__icon">
+                            <use xlink:href="#instagram"></use>
+                        </svg>
+                    </a>
+
+                    <a class="social__item" href="#" target="_blank">
+                        <svg class="social__icon">
+                            <use xlink:href="#vkontakte"></use>
+                        </svg>
+                    </a>
+
                 </div> <!--/.social social--footer-->
             </div><!--/.footer__block-->
 
@@ -412,8 +552,8 @@
     <div class="copyright">
         <div class="container">
             <div class="copyright__text">
-                <div>Copyright © 2015 ActiveBox. All Rights Reserved</div>
-                <div>Made with <span class="copyright__header">&#10084;</span> <span>by Kamal Chaneman</span></div>
+                <div>Copyright © 2022 ActiveBox. All Rights Reserved</div>
+                <div>Made with <span class="copyright__header">&#10084;</span> <span>by Oleg Veremyev</span></div>
             </div>
         </div>
     </div>
