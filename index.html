@@ -14,6 +14,9 @@
           rel="stylesheet">
 
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+
+
     <script
             src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"
             integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ=="
@@ -74,15 +77,15 @@
                 <img src="images/ActiveBoxLogo.png" alt="logo">
             </div>
 
-            <nav class="nav">
-                <a class="nav__link" href="#">Features</a>
-                <a class="nav__link" href="#">Works</a>
-                <a class="nav__link" href="#">Our Team</a>
-                <a class="nav__link" href="#">Testimonials</a>
-                <a class="nav__link" href="#">Download</a>
+            <nav class="nav" id="nav">
+                <a class="nav__link" href="#" data-scroll="#features">Features</a>
+                <a class="nav__link" href="#" data-scroll="#works">Works</a>
+                <a class="nav__link" href="#" data-scroll="#team">Our Team</a>
+                <a class="nav__link" href="#" data-scroll="#reviews">Testimonials</a>
+                <a class="nav__link" href="#" data-scroll="#download">Download</a>
             </nav>
 
-            <button class="burger">
+            <button class="burger" type="button" id="navToggle">
                 <span class="burger__item">invisible text</span>
             </button>
 
@@ -106,7 +109,7 @@
 </div>
 
 <!--Features-->
-<div class="container">
+<div class="container" id="features">
     <div class="features">
 
         <div class="features__item">
@@ -167,7 +170,7 @@
 </div><!-- /.container -->
 
 <!--Works-->
-<div class="works">
+<div class="works" id="works">
 
     <div class="works__item">
         <img class="works__photo" src="images/portfolio/work_1.jpg" alt="work_1">
@@ -236,7 +239,7 @@
 </div><!--/.works-->
 
 <!--Team-->
-<div class="team">
+<div class="team" id="team">
     <div class="container">
         <div class="team__inner">
 
@@ -429,25 +432,67 @@
 </div><!--/.team-->
 
 <!--Testimonials-->
-<div class="reviews">
-    <div class="reviews__item">
-        <div class="reviews__photo">
-            <img class="reviews__image" src="images/woman.jpg" alt="woman">
+<div class="reviews" id="reviews">
+    <div class="reviews__slider" id="reviewsSlider">
+
+        <div class="slick__item">
+            <div class="reviews__item">
+                <div class="reviews__photo">
+                    <img class="reviews__image" src="images/woman.jpg" alt="woman">
+                </div>
+                <div class="reviews__content">
+                    <div class="reviews__text">
+                        “Integer posuere erat a ante venenatis dapibus posuere velit aliquet. Donec sed odio dui. Aenean
+                        eu
+                        leo
+                        quam...”
+                    </div>
+                    <div class="reviews__author">
+                        Susan Sims, Interaction Designer at XYZ
+                    </div>
+                </div>
+            </div><!--/.reviews__item-->
         </div>
-        <div class="reviews__content">
-            <div class="reviews__text">
-                “Integer posuere erat a ante venenatis dapibus posuere velit aliquet. Donec sed odio dui. Aenean eu leo
-                quam...”
-            </div>
-            <div class="reviews__author">
-                Susan Sims, Interaction Designer at XYZ
-            </div>
+
+        <div class="slick__item">
+            <div class="reviews__item">
+                <div class="reviews__photo">
+                    <img class="reviews__image" src="images/woman.jpg" alt="woman">
+                </div>
+                <div class="reviews__content">
+                    <div class="reviews__text">
+                        “Integer posuere erat a ante venenatis dapibuc
+
+                    </div>
+                    <div class="reviews__author">
+                        Diana Veremyeva, senior specialist
+                    </div>
+                </div>
+            </div><!--/.reviews__item-->
         </div>
-    </div>
+
+        <div class="slick__item">
+            <div class="reviews__item">
+                <div class="reviews__photo">
+                    <img class="reviews__image" src="images/woman.jpg" alt="woman">
+                </div>
+                <div class="reviews__content">
+                    <div class="reviews__text">
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias eius, iure maxime optio quae
+                        sed?
+                    </div>
+                    <div class="reviews__author">
+                        Oleg Veremyev, Frontend developer
+                    </div>
+                </div>
+            </div><!--/.reviews__item-->
+        </div>
+
+    </div><!--/.reviewsSlider-->
 </div><!--/.reviews-->
 
 <!--Download-->
-<div class="download">
+<div class="download" id="download">
     <div class="container">
         <h3 class="download__title">
             Are You Ready to Start? Download Now For Free!
@@ -542,6 +587,7 @@
 </footer>
 
 <!--JavaScript-->
+<script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
 <script src="app.js"></script>
 
 </body>
